@@ -1,0 +1,43 @@
+import React from "react";
+import Image from "next/image";
+import imgProfile from "/public/image/kevin.jpg";
+import imgPhone from "/public/image/phone.png";
+import imgGmail from "/public/image/gmail.png";
+import imgAddress from "/public/image/address.png";
+export default function Profile() {
+  return (
+    <div className="w-1/2 p-4">
+      <Image
+        src={imgProfile}
+        alt="foto de kevin"
+        className="rounded-full"
+        width={150}
+        height={100}
+      />
+      <div className="ml-4 text-black mt-4">
+        <h1 className="text-3xl lg:text-3xl">Kevin Sibaja Granados</h1>
+        <h2 className="text-2xl mt-2">Contacto:</h2>
+        <ul className="flex flex-col items-start mt-2">
+          <li className="flex items-center">
+            <Image src={imgPhone} alt="telefono" className="w-6 h-6 mr-2" />
+            <span>84337919</span>
+          </li>
+          <li className="flex items-center mt-2">
+            <Image src={imgGmail} alt="email" className="w-6 h-6 mr-2" />
+            <span>kevinsibajah@gmail.com</span>
+          </li>
+          <li className="flex items-center mt-2">
+            <Image src={imgAddress} alt="Direccion" className="w-6 h-6 mr-2" />
+            <span>San Rafael, Ciudad Neily, Puntarenas, Costa Rica</span>
+          </li>
+        </ul>
+        <hr className="my-4 border-b-2 border-gray-300" />
+        <h1 className="text-2xl mt-4">Informacion:</h1>
+        <ul className="ml-4">
+          <li>Licencia de conducir</li>
+          <li>Disponibilidad para viajar</li>
+        </ul>
+      </div>
+    </div>
+  );
+}
