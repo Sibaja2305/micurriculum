@@ -5,6 +5,7 @@ import imgProfile from "/public/image/kevin.jpg";
 import imgPhone from "/public/image/phone.png";
 import imgGmail from "/public/image/gmail.png";
 import imgAddress from "/public/image/address.png";
+
 export default function Profile() {
   return (
     <div className="w-1/2 p-4">
@@ -28,9 +29,11 @@ export default function Profile() {
             <Link href="kevinsibajah@gmail.com">kevinsibajah@gmail.com</Link>
           </li>
           <li className="flex items-center mt-2">
-  <Image src={imgAddress} alt="Direccion" className="w-6 h-6 mr-2" />
-  <a href="https://www.google.com/maps/search/?api=1&query=San+Rafael,+Ciudad+Neily,+Puntarenas,+Costa+Rica">San Rafael, Ciudad Neily, Puntarenas, Costa Rica</a>
-</li>
+            <Image src={imgAddress} alt="Direccion" className="w-6 h-6 mr-2" />
+            <a href="https://www.google.com/maps/search/?api=1&query=San+Rafael,+Ciudad+Neily,+Puntarenas,+Costa+Rica">
+              San Rafael, Ciudad Neily, Puntarenas, Costa Rica
+            </a>
+          </li>
         </ul>
         <hr className="my-4 border-b-2 border-gray-300" />
         <h1 className="text-2xl mt-4">Informacion:</h1>
