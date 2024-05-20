@@ -8,7 +8,7 @@ export default function Footer(){
     return(
         <div className="w-full absolute bottom-0 z-10 bg-black">
         <div className="container mx-auto flex justify-between items-center p-4">
-          <h2 className="text-white">Kevin Sibaja</h2>
+          <h2 className="text-white">©2024 Kevin Sibaja. Todos los derechos reservados</h2>
           <div className="flex space-x-4">
             <a href="https://www.linkedin.com/in/kevin-sibaja-granados-7522a223a" target="_blank" rel="noopener noreferrer">
               <Image src={imglinkedin} alt="LinkedIn" width={24} height={24} />
