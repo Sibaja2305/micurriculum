@@ -9,8 +9,8 @@ export default function Header(){
             <Image src={logoPersonal} alt="logo persona" className="mr-4 h-10"/> 
             <Link href="/" className="font-bold text-xl relative z-20 mr-auto">Inicio</Link> 
             <div className="space-x-4 text-xl">
-                <Link href="/gallery">Galería</Link>
                 <Link href="/repository">Repositorios</Link>
+                <Link href="mailto:kevinsibajah@gmail.com">Call to Action</Link>
             </div>
         </nav> 
     </div>

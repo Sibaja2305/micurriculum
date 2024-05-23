@@ -19,10 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
-        <main className="pt-20">{children}</main>
-        <div className="fixed bottom-0 left-0 right-0">
-          <Footer />
+        <Header/>
+        {children}
+        <div className="w-full">
+          <Footer/>
         </div>
       </body>
     </html>

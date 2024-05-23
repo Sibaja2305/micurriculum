@@ -1,6 +1,6 @@
 export default function JobInformation() {
   return (
-    <div className="w-1/2 p-4 text-black"> 
+    <div className="pt-20 w-1/2 p-4 text-black"> 
   <h1 className="text-3xl lg:text-3xl font-bold">
     Kevin Josue Sibaja Granados
   </h1>

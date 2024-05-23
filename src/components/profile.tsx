@@ -8,7 +8,7 @@ import imgAddress from "/public/image/address.png";
 
 export default function Profile() {
   return (
-    <div className="p-4 text-black">
+    <div className="pt-20 p-4 text-black">
       <div className="bg-white rounded-lg md:p-4 border-r-0">
         <div className="flex flex-col items-center">
           <Image
@@ -44,10 +44,11 @@ export default function Profile() {
               </li>
             </ul>
             <hr className="my-4 border-b-2 border-gray-300" />
-            <h1 className="text-2xl mt-4">Informacion:</h1>
+            <h1 className="text-2xl mt-4">Habilidades:</h1>
             <ul className="ml-4">
-              <li>Licencia de conducir</li>
-              <li>Disponibilidad para viajar</li>
+              <li>Trabajo en equipo</li>
+              <li>Liderazgo</li>
+              <li>Creativo</li>
             </ul>
           </div>
         </div>
