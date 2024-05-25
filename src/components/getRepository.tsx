@@ -71,27 +71,27 @@ const GetRepositorySlider = () => {
 
   return (
     <div className="bg-black text-white min-h-screen p-20">
-      <h1 className="text-center m-3 text-2xl mb-40">Repositorios: {username}</h1>
-      <div>
-        <Slider {...settings}>
-          {repos.map((repo) => (
-            <div key={repo.id} className="p-4">
-              <a 
-                href={repo.html_url} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="block p-6 border border-gray-200 rounded-lg shadow bg-white hover:bg-black transition-all duration-300 group"
-              >
-                <h3 className="text-lg font-medium text-black group-hover:text-white transition-all duration-300">
-                  {repo.name}
-                </h3>
-                <a href={repo.html_url+'/archive/refs/heads/main.zip'}>Descargar</a>
-              </a>
-            </div>
-          ))}
-        </Slider>
-      </div>
+    <h1 className="text-center m-9 mb-100 text-2xl md:mb-20" style={{ color: "#FFFFFF" }}>Repositorios: {username}</h1>
+    <div>
+      <Slider {...settings}>
+        {repos.map((repo) => (
+          <div key={repo.id} className="p-4">
+            <a 
+              href={repo.html_url} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="block p-6 border border-gray-200 rounded-lg shadow bg-white hover:bg-blue-600 text-blue-600 hover:text-white transition-all duration-300 group"
+            >
+              <h3 className="text-lg font-medium text-black group-hover:text-white transition-all duration-300">
+                {repo.name}
+              </h3>
+              <a href={repo.html_url+'/archive/refs/heads/main.zip'} className="text-white">Descargar</a>
+            </a>
+          </div>
+        ))}
+      </Slider>
     </div>
+</div>
   );
 };
 
