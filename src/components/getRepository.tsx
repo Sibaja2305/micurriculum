@@ -12,7 +12,8 @@ interface Repo {
 }
 
 const GetRepositorySlider = () => {
-  const username = 'Sibaja2305';
+  
+  const username = process.env.NEXT_PUBLIC_GITHUB_USERNAME || 'username';
   const [repos, setRepos] = useState<Repo[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<Error | null>(null);
